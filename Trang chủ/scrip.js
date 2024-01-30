@@ -46,3 +46,25 @@ window.onresize = function(event) {
 };
 
 
+
+function xacnhanmau() {
+    // Nhận giá trị đầu vào email
+  var email = document.getElementById("emailInput").value;
+  var errorMessage = document.getElementById("errorMessage");
+
+      if (!email.trim()) {
+        errorMessage.innerText = "Vui lòng điền vào trường";
+        return false;
+      } else {
+        errorMessage.innerText = "";
+      }
+
+  // Kiểm tra xem email có phải là địa chỉ Gmail không
+  if (email.endsWith("@gmail.com")) {
+    alert("Đã gửi thành công đến địa chỉ Gmail: " + email);
+    return true; 
+  } else {
+    alert("Địa chỉ email không hợp lệ. Chỉ chấp nhận địa chỉ Gmail.");
+    return false;
+  }
+}

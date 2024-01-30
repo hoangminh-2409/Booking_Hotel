@@ -99,7 +99,9 @@ function inputchange() {
 
 
 
-
+function abc() {
+  confirm("Cảm ơn bạn đã đóng góp ý kiến!");
+}
 
 
 
